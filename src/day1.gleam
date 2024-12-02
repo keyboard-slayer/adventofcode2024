@@ -5,7 +5,7 @@ import gleam/pair
 import gleam/result
 import gleam/string
 
-import d1input
+import simplifile
 
 pub fn impl_p1(in: String) {
   let lines =
@@ -56,6 +56,7 @@ pub fn impl_p2(in: String) {
 }
 
 pub fn main() {
-  io.debug(impl_p1(d1input.get_input()))
-  io.debug(impl_p2(d1input.get_input()))
+  let assert Ok(input) = simplifile.read("./src/inputs/d1input.txt")
+  io.debug(impl_p1(input))
+  io.debug(impl_p2(input))
 }

@@ -72,7 +72,7 @@ pub fn impl_p2(in: String) -> Int {
 }
 
 pub fn main() {
-  let assert Ok(input) = simplifile.read("./src/d2input.txt")
+  let assert Ok(input) = simplifile.read("./src/inputs/d2input.txt")
   io.debug(impl_p1(string.trim_end(input)))
   io.debug(impl_p2(string.trim_end(input)))
 }
