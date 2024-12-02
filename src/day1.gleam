@@ -56,8 +56,6 @@ pub fn impl_p2(in: String) {
 }
 
 pub fn main() {
-  io.print("Part 1:   ")
   io.debug(impl_p1(d1input.get_input()))
-  io.print("Part 2:   ")
   io.debug(impl_p2(d1input.get_input()))
 }
