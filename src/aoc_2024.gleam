@@ -1,5 +1,6 @@
 import day1
 import day2
+import day3
 import gleam/io
 
 pub fn main() {
@@ -7,4 +8,6 @@ pub fn main() {
   day1.main()
   io.println("===== Day 2 ======")
   day2.main()
+  io.println("===== Day 3 ======")
+  day3.main()
 }

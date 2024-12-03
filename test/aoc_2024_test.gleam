@@ -3,6 +3,7 @@ import gleeunit/should
 
 import day1
 import day2
+import day3
 
 pub fn main() {
   gleeunit.main()
@@ -32,4 +33,13 @@ pub fn day2_test() {
   1 3 6 7 9"
   day2.impl_p1(input) |> should.equal(2)
   day2.impl_p2(input) |> should.equal(4)
+}
+
+pub fn day3_test() {
+  let input =
+    "xmul(2,4)%&mul[3,7]!@^do_not_mul(5,5)+mul(32,64]then(mul(11,8)mul(8,5))"
+  let input2 =
+    "xmul(2,4)&mul[3,7]!^don't()_mul(5,5)+mul(32,64](mul(11,8)undo()?mul(8,5))"
+  day3.impl_p1(input) |> should.equal(161)
+  day3.impl_p2(input2) |> should.equal(48)
 }
