@@ -1,5 +1,1 @@
-*.beam
-*.ez
-/.stfolder
-/build
-erl_crash.dump
+.*/
